@@ -3,7 +3,7 @@
     *   4.  Agregar la referencia al archivo js/sw-acceces.js
 */
 
-importScripts('js/sw-acces.js')
+importScripts('js/sw-access.js')
 
 /*
     * 1. Determinar el contenido de los cache de la PWA
