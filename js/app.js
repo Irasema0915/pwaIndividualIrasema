@@ -34,7 +34,12 @@ self.addEventListener('active', event=>{
     *   determinar en donde se esta corriendo la aplicación
 */
 var url = window.location.href; //obtenemos todo el url
-var pwaLocation = 'https://irasema0915.github.io/pwaIndividualIrasema/sw.js'; //path donde se encuentra el sw en GitHub
+var pwaLocation = '/pwaIndividualIrasema/sw.js'; //path donde se encuentra el sw en GitHub
+
+/*}
+
+
+*/
 
 if(navigator.serviceWorker){
     if(url.includes('localhost')){
