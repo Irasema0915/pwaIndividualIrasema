@@ -70,7 +70,7 @@ self.addEventListener('fetch', event => {
     const respuesta = caches.match(event.request).then(res => {
         if (res) { return res; } else {
             return fetch(event.request).then(newRes => {
-                return actualizaCacheDinamico(DYNAMIC_CACHE, event.request, newRes);
+                return actualizaCacheDinamico(DYNAMIC_NAME, event.request, newRes);
             });
         }
     });
