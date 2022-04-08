@@ -7,7 +7,7 @@ function actualizaCacheDinamico(dynamicCache, request, response) {
         //la respuesta tiene data y se debe almacaenar en cache
         return caches.open(dynamicCache).then(cache => {
             cache.put(request, response.clone());
-            return cache.clone();
+            return response.clone();
         });
     } else { //si no viene nada en la respuesta
         return response;
